@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 
 import { useParams } from "react-router-dom";
@@ -37,7 +36,6 @@ const Pokemon = () => {
     return <p>No se encontró el Pokémon</p>;
   }
 
-  //   console.log(selectedPokemon);
   return (
     <div
       style={{
