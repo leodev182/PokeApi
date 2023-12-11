@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.linkDefoult {
+  color: gray;
+  margin: 10px;
+}
+
+.active {
+  color: whitesmoke;
+  margin: 10px;
+}
+
+.home {
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.land {
+  background: black;
+  height: 80%;
+  width: 75%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 250px;
+  z-index: -50;
+}
+.contenedor {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  height: 80vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/images/pokeabierta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.customSelect {
+  height: auto;
+  width: 200px;
+  font-size: x-large;
+  color: whitesmoke;
+  background: transparent;
+  border: none;
+  @supports (-moz-appearance: none) {
+    backdrop-filter: blur(10px);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: linear-gradient(45deg, #1802da, #ffc400);
+}
